@@ -1,0 +1,12 @@
+<h1>Welcome!</h1>
+<h1>Companies</h1>
+
+<%companies = Company.all%>
+
+<p>How many companies do you see? <%= companies.count%></p>
+
+<ul>
+  <% for company in companies %>
+  <li><%= company["name"]%></li>
+  <% end %>
+</ul>
