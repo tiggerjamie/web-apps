@@ -6,10 +6,18 @@
  %>
 
 
-<p>die 1 is <%= d1%> </p>
+<p>die 1 is </p>
+<p>
+<img src="/images/dice/<%= d1%>.svg" alt="">
+</p>
 
-<p>die 2 is <%= d2%> </p>
+<p>die 2 is </p>
+<p>
+<img src="/images/dice/<%= d2%>.svg" alt="">
+</p>
 
-<h2>total is <%= d1+d2%></h2>
 
-<p>roll again? </p>
+<h2>you rolled <%= d1+d2%></h2>
+
+<p><a href="/dice">roll again?</a></p>
+
